@@ -1,0 +1,84 @@
+.container{
+    background-color: #ede7f7;
+    max-width: 100%;
+    
+}
+header {
+    background-color: #59618a;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #071e29;
+    padding-left: 16px;
+    font-style: oblique;
+}
+
+.btn-success{
+background-color: #a1ce6e !important;
+width: 60px;
+height: 30px;
+margin-right: 24px;
+margin-bottom: 7px;
+color:black
+}
+
+.card-data {
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: white;
+border-radius: 5px;
+margin-top: 26px 
+}
+.card{
+    width: 15rem;
+    margin: 6px;
+    height: 300px;
+    margin-left: 2%;
+}
+.card-img-top{
+    height: 50px;
+    width:100%;
+    background-color: cadetblue;
+}
+.card-title{
+    color: #0a0a54;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+.card-text{
+    color: #0a0a54;
+    
+}
+@media (max-width: 700px) { 
+    .btn-success { 
+      width: 100px  
+    } 
+    .col-sm-2{
+        margin: 14px;
+    }
+    .card{
+        width: 15rem;
+        margin: 6px;
+        height: 300px;
+        margin-left: 11%;
+    }
+} 
+  
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 700px) and (max-width: 1024px) { 
+   
+} 
+  
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 1024px) and (max-width: 1440px){ 
+   
+} 
+  
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1440px){ 
+   
+} 
+  
+    

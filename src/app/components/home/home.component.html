@@ -1,0 +1,63 @@
+<header>
+    <h3>SpaceX launch programs</h3>
+</header> 
+<div class="container" >
+   <div class="row">
+    <div class="col-sm-2" style="background-color: white;
+    border-radius: 5px;
+    margin-top: 26px;">
+        <h5 class="heading">Filters</h5>
+        <h6 class="heading" style="text-align: center;">Launch Filters</h6>
+        <hr style="margin-top: 0px;">
+        <div class="row" style="margin-left: 22px;">
+            <button type="button"  class="btn btn-success btn-sm" (click)="onchangeDate(2006)">2006</button>
+            <button type="button" class="btn btn-success btn-sm"  (click)="onchangeDate(2007)">2007</button>
+            <button type="button" class="btn btn-success btn-sm"  (click)="onchangeDate(2008)">2008</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2009)">2009</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2010)">2010</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2011)">2011</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2012)">2012</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2013)">2013</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2014)">2014</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2015)">2015</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2016)">2016</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2017)">2017</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2018)">2018</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2019)">2019</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onchangeDate(2020)">2020</button>
+          
+        </div>
+        <h6 class="heading" style="text-align: center;">Successful Launch</h6>
+        <hr style="margin-top: 0px;">
+        <div class="row" style="margin-left: 22px;">
+            <button type="button" class="btn btn-success btn-sm" (click)="onLaunchChange(true)">True</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onLaunchChange(false)">False</button>
+        </div>
+        <h6 class="heading" style="text-align: center;">Successful Landing</h6>
+        <hr style="margin-top: 0px;">
+        <div class="row" style="margin-left: 22px;">
+            <button type="button" class="btn btn-success btn-sm" (click)="onLandingChange(true)">True</button>
+            <button type="button" class="btn btn-success btn-sm" (click)="onLandingChange(false)">False</button>
+        </div>
+    </div>
+    <!-- <div class="col-sm-1"  ></div> -->
+    <div class="col-sm-10" >
+        <div class="card-data">
+            <div class="card"  *ngFor="let data of launch_date">
+                <img class="card-img-top" src={{data.links.mission_patch}} alt="Mission patch of {{ data.mission_name }}">
+                <div class="card-body">
+                  <h5 class="card-title">{{data.mission_name}}# {{data.flight_number}}</h5>
+                  <p class="card-text"><span style="font-weight: 500;color:black">Mission IDs:</span>{{data.mission_id}}</p>
+                  <p class="card-text"><span style="font-weight: 500;color:black">Launch Date:</span>{{data.launch_year}}</p>
+                  <p class="card-text"><span style="font-weight: 500;color:black">Successful Launch:</span>{{data.launch_success}}</p>
+                  <p class="card-text"><span style="font-weight: 500;color:black" >Successful Landing:</span>{{data.rocket.first_stage.cores[0].land_success}}</p>
+                  
+                </div>
+            </div> 
+        </div>
+            
+    </div>
+   </div>
+   
+   
+</div>
