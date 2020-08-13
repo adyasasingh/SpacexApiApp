@@ -65,7 +65,16 @@ margin-top: 26px
         margin-left: 11%;
     }
 } 
-  
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b4bce2;
+    color: black;
+    text-align: center;
+    font-weight:bold
+}  
 /* Media Query for low resolution  Tablets, Ipads */ 
 @media (min-width: 700px) and (max-width: 1024px) { 
    
