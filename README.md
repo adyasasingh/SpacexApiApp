@@ -1,27 +1,17 @@
-# SpacexLaunch
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+//to create angular app
+ng new spacex
+//to create component
+ng g c home
+//to add bootstrap and jquery for responsive design
+//load api to get all data at first time
+https://api.spaceXdata.com/v3/launches?limit=100
+//apply filter to the api for date
+'https://api.spaceXdata.com/v3/launches?limit=100&launch_year='+$event
+//apply true false filter for launch success
+'https://api.spacexdata.com/v3/launches?limit=100&launch_success='+$event
+//apply filter for successful landing
+'https://api.spacexdata.com/v3/launches?limit=100&land_success='+$event)
+//then start npm start
+//ng serve
+*image is not working from url
+ http://images2.imgbox.com/a7/ba/NBZSw3Ho_o.png   
